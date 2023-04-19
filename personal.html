@@ -5,39 +5,67 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="css/html5reset.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
     <link rel="stylesheet" type="text/css" href="css/style4personal.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&family=Pacifico&family=Roboto&display=swap" rel="stylesheet">
+    <script src="js/personal.js"></script>
     <title>Personal</title>
 </head>
 <body>
-    <a href="#skip">Skip to Main Content</a>
     <header>
+        <a id="jump" href="#skip">Skip to Main Content</a>
         <nav>
             <ul>
               <li><a href="index.html">About Me</a></li>
               <li><a href="experience.html">Experience</a></li>
-              <li><a href="personal.html">Personal</a></li>
+              <li><a id="personal" href="personal.html">Personal</a></li>
             </ul>
         </nav>
     </header>
 
     <main id="skip">
-        <h2>Movies I have watched recently</h2>
-        <div id="movies">
-            <img src="images/MissionImpossible.jpg" width="250" alt="My favorite movie series">
-            <img src="images/DriveMyCar.jpg" width="250" alt="The latest movie I watched">
-            <img src="images/TheIntern.jpg" width="250" alt="My favorite movie">
-            <img src="images/ToyStory4.jpg" width="250" alt="A movie I watched on the plane">
-            <img src="images/Sing2.jpg" width="250" alt="The movie I watched on the Christmas day in Boston">
-            <img src="images/GlassOnion.jpg" width="250" alt="A funny movie">
-            <img src="images/TopGun.jpg" width="250" alt="An exciting movie">
+        <div class="hidden_radio">
+            <label class="form-control">
+                <input type="radio" name="radio" id="preference" checked="true" onclick="order_by_preference()"  tabindex="0"/>
+                The Order of My Preference
+            </label>
+            
+            <label class="form-control">
+                <input type="radio" name="radio" id="rate" onclick="order_by_rate()"  tabindex="0"/>
+                The Order of the Rate from IMDb
+            </label>
         </div>
         
-        <h2>My favorit TV shows</h2>
+        <h2>Movies</h2>
+        <div id="movies">
+            <img class="movie MI" id="mi" src="images/MissionImpossible.jpg" alt="My favorite movie series, Mission: Impossible">
+            <p class="movie hidden Drive" >This is the latest movie I watched. The original story was written by a famous Japanese author, Haruki Murakami</p>
+            <img class="movie Intern" id="intern" src="images/TheIntern.jpg" alt="My favorite movie, The Intern">
+            <p class="movie hidden MI" >I love all Mission: Impossible movies. This specific movie, however, is my favorite. The action is very exciting.</p>
+            <img class="movie Drive" id="drive" src="images/DriveMyCar.jpg" alt="The latest movie I watched, Drive My Car">
+            <p class="movie hidden Intern" >This is an inspiring movie. It makes me study/work hard.</p>
+            <img class="movie Toy" id="toy" src="images/ToyStory4.jpg" alt="A movie I watched on the plane, Toy Story 4">
+            <p class="movie hidden Sing" >This is my first movie I wathed on a theater in the States.</p>
+            <img class="movie Top" id="top" src="images/TopGun.jpg" alt="An exciting movie, Top Gun2">
+            <p class="movie hidden Toy" >I like the Toy Story series too. The technique behind the animation is great.</p>
+            <img class="movie Sing" id="sing" src="images/Sing2.jpg" alt="The movie I watched on the Christmas day in Boston, Sing2">
+            <p class="movie hidden Top" >When the first Top Gun was out, of course I wasn't born yet. I can't believe he is 60.</p>
+        </div>
+        
+        <h2>TV shows</h2>
         <div id="TVshows">
-            <img src="images/MoneyHeist.jpg" width="250" alt="Exciting tv shows">
-            <img src="images/EmilyInParis.jpg" width="250" alt="Lovely tv shows">
+            <img class="TVshow Money" id="money" src="images/MoneyHeist.jpg" alt="Exciting tv shows, Money Heist">
+            <p class="TVshow hidden Emily">This TV show insipres me a lot. She went to France with little knowledge of French and struggled but grew. I found similarity in myself.</p>
+            <img class="TVshow Friends" id="friends" src="images/Friends.jpg" alt="old sitcoms, Friends">
+            <p class="TVshow hidden Money">The plot is well made. Definitely one of the best TV shows ever!</p>
+            <img class="TVshow Emily" id="emily" src="images/EmilyInParis.jpg" alt="Lovely tv shows, Emily in Paris">
+            <p class="TVshow hidden Friends">Very classic but I really enjoyed it. It was fun but also learned English a lot from it.</p>
         </div>
         
     </main>
+
+    <footer>
+        <p>&copy; Shun Akiyama - SI339 WN23 Final Project</p>
+    </footer>
 </body>
 </html>

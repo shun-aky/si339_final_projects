@@ -1,13 +1,20 @@
-h1{
-    font-size: 50px;
-    line-height: 1;
-    padding: 50px 0;
+h2 {
+    text-shadow: #FC0 1px 0 10px;
     text-align: center;
+    font-style: italic;
+    font-family: 'Pacifico', cursive;
+    padding: 20px;
 }
-  
-h2{
-    font-size: 32px;
-    line-height: 1.5;
+
+#personal {
+    text-decoration: underline;
+    text-decoration-color: orange;
+    text-decoration-thickness: 20%;
+    font-size: larger;
+}
+
+#TVshows {
+    margin-bottom: 20px;
 }
 
 #movies {
@@ -17,9 +24,97 @@ h2{
     justify-content: space-evenly;
 }
 
+.movie {
+    width: 250px;
+}
+
 #TVshows {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-evenly;
+}
+
+.TVshow {
+    width: 250px;
+}
+
+#TVshows {
+    margin-bottom: 20px;
+}
+
+.hidden {
+    display: none;
+}
+
+.MI {
+    border: 3px solid blueviolet;
+}
+
+.Drive {
+    border: 3px solid rosybrown;
+}
+
+.Intern {
+    border: 3px solid greenyellow;
+}
+
+.Sing {
+    border: 3px solid olive;
+}
+
+.Toy {
+    border: 3px solid purple;
+}
+
+.Top {
+    border: 3px solid wheat;
+}
+
+.Money {
+    border: 3px solid saddlebrown;
+}
+
+.Emily {
+    border: 3px solid pink;
+}
+
+.Friends {
+    border: 3px solid goldenrod;
+}
+
+#movies *, #TVshows * {
+    border-radius: 10px;
+}
+
+.form-control {
+    font-family: system-ui, sans-serif;
+    font-weight: bold;
+    line-height: 1.5;
+    text-align: center;
+}
+
+.hidden_radio {
+    display: none;
+    position: absolute;
+    right: 0;
+    margin: 5px;
+    margin-bottom: 10px;
+}
+
+@media screen and (min-width: 800px) {
+    .hidden {
+        display: inline;
+        padding: 5px;
+    }
+}
+
+@media screen and (min-width: 950px) {
+    .hidden {
+        display: none;
+    }
+
+    .hidden_radio {
+        display: block;
+    }
 }

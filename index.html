@@ -5,15 +5,17 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="css/html5reset.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
     <link rel="stylesheet" type="text/css" href="css/style4index.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&family=Pacifico&family=Roboto&display=swap" rel="stylesheet">
     <title>Final project</title>
 </head>
 <body>
-    <a href="#skip">Skip to Main Content</a>
     <header>
+        <a id="jump" href="#skip">Skip to Main Content</a>
         <nav>
             <ul>
-              <li><a href="index.html">About Me</a></li>
+              <li><a id="index" href="index.html">About Me</a></li>
               <li><a href="experience.html">Experience</a></li>
               <li><a href="personal.html">Personal</a></li>
             </ul>
@@ -21,31 +23,131 @@
     </header>
 
     <main id="skip">
-        <h1>Things I like</h1>
-
-        <h2>Manga/Anime</h2>
+        <h1>My Favorite</h1>
+        <div id="comment">
+            <p>Here are my favorites! I like manga and try to read as many as possible. I don't have much time though 😭 I like both playing and watching sports. Baseball is my favorite to watch but tennis is my favorite to play! I'm from Japan so two favorite cities from Japan and my favorite city in the States, Boston!</p>
+        </div>
+        
+        <h2>Manga</h2>
         <div id="Manga">
-            <img id="attackontitan" src="images/attackontitan.jpg" alt="Exciting manga">
-            <p>Attack on Titan (進撃の巨人) ended in April 2021 with somewhat controversial ending. The final season of anime will come out this fall. The drastic change in settings astonished me and made it one of the best mangas ever. This manga successfuly depicts issues we have been facing and has us think of those problems.</p>
-            <img id="onepiece" src="images/onepiece.jpg" alt="Unfinished but amazing manga">
-            <p>One Piece (ワンピース) is definitely one of my favorite mangas. This manga not only fulfills our desire for adventure but also moves readers' heart. Even though there are more than 100 volumes, this is the first to recommend to my friends!</p>
-            <img id="spacebrothers" src="images/spacebrothers.jpg" alt="Feel good manga">
-            <p>Space Brothers (宇宙兄弟) is a feel-good manga where brothers are trying to be astronauts. Even though this anime is not as famous as those mentioned above, Space Brothers makes you both laugh and cry with no doubt.</p>
+            <div class="flip-card manga" id="Attack" tabindex="0">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <img class="block" id="attackontitan" src="images/attackontitan.jpg" alt="Exciting and finished manga, Attack On Titan (進撃の巨人) ">
+                    </div>
+                    <div class="flip-card-back">
+                        <h3>Attack On Titan</h3>
+                        <p class="block text" id="attack_description" >Attack on Titan (進撃の巨人) ended in April 2021 with somewhat controversial ending. The final season of anime will come out this fall. The drastic change in settings astonished me and made it one of the best mangas ever. This manga successfuly depicts issues we have been facing and has us think of those problems.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="flip-card manga" id="One" tabindex="0">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <img class="block" id="onepiece" src="images/onepiece.jpg" alt="My favorite manga, One Piece (ワンピース)">
+                    </div>
+                    <div class="flip-card-back">
+                        <h3>One Piece</h3>
+                        <p class="block text" id="one_description">One Piece (ワンピース) is definitely one of my favorite mangas. This manga not only fulfills our desire for adventure but also moves readers' heart. Even though there are more than 100 volumes, this is the first to recommend to my friends!</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="flip-card manga" id="Space" tabindex="0">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <img class="block" id="spacebrothers" src="images/spacebrothers.jpg" alt="Feel good manga, Space Brothers (宇宙兄弟) ">
+                    </div>
+                    <div class="flip-card-back">
+                        <h3>Space Brothers</h3>
+                        <p class="block text" id="space_description">Space Brothers (宇宙兄弟) is a feel-good manga where brothers are trying to be astronauts. Even though this anime is not as famous as those mentioned above, Space Brothers makes you both laugh and cry with no doubt.</p>
+                    </div>
+                </div>
+            </div>
         </div>
         
         <h2>Sports</h2>
         <div id="Sports">
-            <img id="wbc" src="images/wbc.jpg" width="250" alt="Exciting baseball tournament">
-            <img id="chanponship" src="images/chanponship.jpg" width="250" alt="Japan won the wbc">
-            <img id="worldcup" src="images/worldcup.jpg" width="250" alt="Soccer game!">
-            <img id="grandslam" src="images/grandslam.jpg" width="250" alt="tennis tournaments">
+            <div class="flip-card sports" id="Chanpion" tabindex="0">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <img class="block" id="chanponship" src="images/chanponship.jpg" alt="Japan won the wbc">
+                    </div>
+                    <div class="flip-card-back" tabindex="0">
+                        <h3>Baseball</h3>
+                        <p class="block text" id="chanponship_description" >Japan won WBC (World Baseball Classic) last month. The semi-final against Mexico and final against USA were amazing games!</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="flip-card sports" id="WorldCup" tabindex="0">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <img class="block" id="worldcup" src="images/worldcup.jpg" alt="World cup!">
+                    </div>
+                    <div class="flip-card-back">
+                        <h3>Soccer</h3>
+                        <p class="block text" id="worldcup_description" >The world cup took place last December. I like watching soccer games. The final was excellent.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="flip-card sports" id="Grandslam" tabindex="0">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <img class="block" id="grandslam" src="images/grandslam.jpg" alt="famous tennis tournaments">
+                    </div>
+                    <div class="flip-card-back">
+                        <h3>Tennis</h3>
+                        <p class="block text" id="grandslam_description" >I like playing tennis. I occasionally watch tennis games but not often.</p>
+                    </div>
+                </div>
+            </div>
         </div>
 
-        <h2>Japan</h2>
-        <div id="Japan">
-            <img id="tokyo" src="images/tokyo.jpg" width="250" alt="My hometown!">
-            <img id="kyoto" src="images/kyoto.jpg" width="250" alt="Historical town in Japan">
+        <h2>Cities</h2>
+        <div id="Cities">
+            <div class="flip-card cities" id="Tokyo" tabindex="0">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <img class="block" id="tokyo" src="images/tokyo.jpg" alt="My hometown!">
+                    </div>
+                    <div class="flip-card-back">
+                        <h3>Tokyo</h3>
+                        <p class="block text" id="tokyo_description" >My hometown. It's the best city in my opinion. This image is edited though.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="flip-card cities" id="Kyoto" tabindex="0">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <img class="block" id="kyoto" src="images/kyoto.jpg" alt="Historical town in Japan">
+                    </div>
+                    <div class="flip-card-back">
+                        <h3>Kyoto</h3>
+                        <p class="block text" id="kyoto_description" >A historical city in Japan. It's especially pretty if you go there in spring.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="flip-card cities" id="Boston" tabindex="0">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <img class="block" id="boston" src="images/boston.jpg" alt="my favorite city in the US">
+                    </div>
+                    <div class="flip-card-back">
+                        <h3>Boston</h3>
+                        <p class="block text" id="boston_description" >My favorite city in the US. It has history but modern as well.</p>
+                    </div>
+                </div>
+            </div>
         </div>
     </main>
+
+    <footer>
+        <p>&copy; Shun Akiyama - SI339 WN23 Final Project</p>
+    </footer>
 </body>
 </html>

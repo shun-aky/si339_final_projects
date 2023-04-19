@@ -1,0 +1,90 @@
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+h1{
+    font-size: 50px;
+    line-height: 1;
+    padding: 50px 0;
+    text-align: center;
+}
+  
+h2{
+    font-size: 32px;
+    line-height: 1.5;
+    padding-bottom: 20px;
+}
+
+h3 {
+    font-size: 20px;
+    padding: 3px;
+    text-align: center;
+}
+
+nav li{
+    display:inline;
+    padding-left:20px;
+}
+
+nav a{
+    color: black;
+    font-weight: bold;
+    text-decoration: none; 
+}
+
+nav{
+    background-color: #ddd;
+    padding: 25px 0; 
+    text-align: left;
+}
+
+footer{
+    background-color: black;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+#jump {
+    position: absolute;
+    top: -40px;
+    display: block;
+    text-align: center;
+    text-decoration: underline;
+    background-color: #FBEC5D;
+    color: blue;
+    padding: 5px;
+}
+
+#jump:focus {
+    top: 0px;
+    right: 50px;
+    left: 50px;
+}
+
+p {
+    font-family: 'Roboto', 'Noto Sans JP', Arial;
+}
+
+body {
+    background-color: beige;
+}
+
+@media screen and (min-width: 800px) {
+    body {
+        background-color: burlywood;
+    }
+}
+
+@media screen and (min-width: 950px) {
+    body {
+        background-image: url('../images/MichiganTransparent.png');
+        background-attachment: fixed; /* Parallax effect */     
+        background-position: center;  /* Parallax effect */
+        background-repeat: no-repeat; /* Parallax effect */
+        background-size: cover;       /* Parallax effect */
+        background-color: transparent;
+        height: 100%;
+    }
+}
