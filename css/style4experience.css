@@ -4,3 +4,12 @@
     text-decoration-thickness: 20%;
     font-size: larger;
 }
+
+h2 {
+    padding-bottom: 0px;
+}
+
+* {
+    margin: 10px;
+}
+
